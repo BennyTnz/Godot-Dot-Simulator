@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbnt18i5tgbiv"]
+
+[ext_resource type="Script" uid="uid://bsamiovd75lfj" path="res://Dots/RedDot/red_dot.gd" id="1_1rcey"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7a7q0"]
+radius = 20.0
+
+[node name="RedDot" type="StaticBody2D"]
+script = ExtResource("1_1rcey")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_7a7q0")
