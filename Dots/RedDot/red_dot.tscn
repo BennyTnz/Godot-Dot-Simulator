@@ -2,12 +2,13 @@
 
 [ext_resource type="Script" uid="uid://bsamiovd75lfj" path="res://Dots/RedDot/red_dot.gd" id="1_1rcey"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_7a7q0"]
-radius = 20.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_rogv3"]
 
-[node name="RedDot" type="StaticBody2D"]
+[node name="RedDot" type="RigidBody2D"]
+gravity_scale = 0.0
 script = ExtResource("1_1rcey")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_7a7q0")
+scale = Vector2(0.5, 0.5)
+shape = SubResource("CircleShape2D_rogv3")
