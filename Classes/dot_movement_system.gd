@@ -26,3 +26,19 @@ func GETATTRACTION(distance: Vector2, colour_to_colour_value: float):
 	if ATTRACTION.length() > distance.length():
 		ATTRACTION = distance - (RADIUS * distance.normalized())
 	return ATTRACTION
+
+func WALLREPELx1(pos):
+	var a = globals.WALLREPEL / -(globals.SCREENSIZE.x - pos.x)
+	return a
+
+func WALLREPELx2(pos):
+	var a = globals.WALLREPEL / -(pos.x)
+	return a
+
+func WALLREPELy1(pos):
+	var a = globals.WALLREPEL / -(globals.SCREENSIZE.y - pos.y)
+	return a
+
+func WALLREPELy2(pos):
+	var a = globals.WALLREPEL / -(pos.y)
+	return a

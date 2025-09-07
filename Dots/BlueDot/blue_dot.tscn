@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvp0ohvdfmf04"]
+
+[ext_resource type="Script" uid="uid://lcywo7dq20pg" path="res://Dots/BlueDot/blue_dot.gd" id="1_6yur5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ldtdn"]
+
+[node name="BlueDot" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource("1_6yur5")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.5, 0.5)
+shape = SubResource("CircleShape2D_ldtdn")

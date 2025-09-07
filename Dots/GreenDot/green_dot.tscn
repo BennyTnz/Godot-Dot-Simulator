@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dycllxr21wu8i"]
+
+[ext_resource type="Script" uid="uid://b4243goyus1l4" path="res://Dots/GreenDot/green_dot.gd" id="1_fgpb6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_k0pu1"]
+
+[node name="GreenDot" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource("1_fgpb6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.5, 0.5)
+shape = SubResource("CircleShape2D_k0pu1")

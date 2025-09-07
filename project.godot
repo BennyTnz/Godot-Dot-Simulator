@@ -22,6 +22,8 @@ window/size/viewport_height=800
 [global_group]
 
 REDS="All the red dots."
+BLUES="All the blue dots."
+GREENS="All the green dots."
 
 [rendering]
 

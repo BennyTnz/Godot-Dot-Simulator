@@ -1,7 +1,10 @@
+const BLUENUMBER = 0                                                         #Number of blues
+const GREENNUMBER = 0
+const REDNUMBER = 50                                                          #Number of reds
 const FARSENSITIVITY = 0.01
 const MAXSPEED = 1
 const RADIUS = 5                                                             #Dot radius
-const RANGE = 1000
-const REDNUMBER = 2                                                          #Number of reds
+const RANGE = 500
 const SCREENSIZE = Vector2(1500, 800)                                        #Size of the screen
 const SENSITIVITY = 0.05
+const WALLREPEL = 50

@@ -9,7 +9,7 @@ static func CREATEMATRIX(size):                                     #Creates mat
 	for a in range(size):                                           #Repeats
 		ATTRACTIONMATRIX.append([])                                 #Adds another array inside of the original array
 		for b in range(size):                                       #Repeats
-			ATTRACTIONMATRIX[a].append(rng.randf_range(-1.0, 1.0))  #Adds random number between -1 and 1
+			ATTRACTIONMATRIX[a].append(rng.randf_range(-1.00001, 1.0))  #Adds random number between -1 and 1
 
 static func GETATTRACTION(from: int, to: int):                      #Gets an attraction
 	return ATTRACTIONMATRIX[from][to]                               #Returns attraction
