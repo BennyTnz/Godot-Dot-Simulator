@@ -24,6 +24,9 @@ window/size/viewport_height=800
 REDS="All the red dots."
 BLUES="All the blue dots."
 GREENS="All the green dots."
+YELLOWS="All the yellow dots."
+PURPLES="All the purple dots."
+ORANGES="All the orange dots."
 
 [rendering]
 

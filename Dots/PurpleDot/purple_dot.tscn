@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0rio6ttnyn8v"]
+
+[ext_resource type="Script" uid="uid://busupsx82443j" path="res://Dots/PurpleDot/purple_dot.gd" id="1_71ewg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kvams"]
+
+[node name="RigidBody2D" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource("1_71ewg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.5, 0.5)
+shape = SubResource("CircleShape2D_kvams")

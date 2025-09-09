@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3uqmsfcqhccc"]
+
+[ext_resource type="Script" uid="uid://bf1i4pi3g21fx" path="res://Dots/OrangeDot/orange_dot.gd" id="1_kfhpk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8xvq7"]
+
+[node name="OrangeDot" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource("1_kfhpk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.5, 0.5)
+shape = SubResource("CircleShape2D_8xvq7")
